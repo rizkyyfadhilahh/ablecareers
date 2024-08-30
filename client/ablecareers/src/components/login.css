@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.login-container {
+  display: flex;
+  width: 100%;
+}
+
+.login-image {
+  width: 100%;
+  background-image: url("../../public/disabled.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-image h1 {
+  color: #fff500;
+  font-size: 80px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 5em;
+  background-color: #bdabdb;
+  color: white;
+  height: 100vh;
+}
+
+.login-form h1 {
+  font-size: 50px;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 2rem;
+  width: 40%;
+}
+
+.login-form form input {
+  padding: 20px;
+  color: grey;
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+}
+
+#form-info {
+  color: black;
+  padding-bottom: 2px;
+}
+
+#submit-login {
+  margin-top: 1em;
+  color: white;
+  padding: 16px;
+  width: 60%;
+  background-color: black;
+}
+
+@media (max-width: 600px) {
+  .login-image {
+    display: none;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+  .login-form form {
+    width: 100%;
+  }
+}

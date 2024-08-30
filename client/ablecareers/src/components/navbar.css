@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.borderNav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+}
+
+.borderNav li a {
+  font-weight: 700;
+  color: black;
+  font-size: 24px;
+}
+
+.borderNav ul li {
+  padding: 1rem 1.5rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  border-radius: 35px;
+}
+
+.borderNav ul li:hover {
+  background-color: gold;
+  color: white;
+  border-radius: 35px;
+}
+
+.borderNav ul li.active {
+  background-color: gold;
+}
+.borderNav li a.active {
+  color: #000;
+}
+
+.auth-buttons {
+  display: flex;
+  background-color: #000;
+  border-radius: 35px;
+  padding: 0.3rem;
+}
+
+.login,
+.register {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.login:hover,
+.register:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.borderNav {
+  margin: 2rem;
+  border: none;
+  color: black;
+
+  border-radius: 35px;
+}
+.login {
+  border: 2px solid #000000;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 470;
+}
+.register {
+  border: 2px solid #000000;
+  background-color: transparent;
+  color: white;
+  font-weight: 470;
+}
+
+.profile-detail {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 5px;
+}
+
+.view-profile-detail {
+  border: 1px solid;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: grey;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+}
+
+.user-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 60px;
+  left: -200px;
+  border: 1px solid;
+  width: max-content;
+  padding: 12px 16px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  cursor: pointer;
+}
+
+.user-account-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1.2em;
+
+  padding-bottom: 1rem;
+  border-bottom: 2px solid;
+}
+
+.user-account-header > p {
+  max-width: 150px;
+  font-size: 20px;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.view-biodata {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  padding: 10px 1rem;
+  text-align: center;
+  gap: 1em;
+  color: white;
+  background-color: darkslategray;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.user-profile > p {
+  font-size: 24px;
+}
+
+.profile-detail-picture {
+  width: 50px;
+  height: 50px;
+
+  position: relative;
+}
+
+#person-icon {
+  position: absolute;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+}
+
+.logout:hover {
+  background-color: #e9ecef;
+  border-color: #b3b3b3;
+  padding: 4px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#logout-icon {
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 6px;
+  color: white;
+  background-color: darkslategray;
+}
+
+.logout p {
+  font-size: 16px;
+}
+
+@media (max-width: 1100px) {
+  header {
+    width: 100%;
+  }
+  nav {
+    padding: 0 2rem;
+
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .borderNav ul {
+    gap: 1rem;
+  }
+
+  .borderNav li a {
+    font-size: 20px;
+  }
+
+  .auth-buttons .login,
+  .auth-buttons .register {
+    font-size: 14px;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .user-account {
+    left: -150px;
+  }
+
+  .view-biodata,
+  .logout {
+    padding: 8px 1rem;
+    font-size: 14px;
+  }
+
+  #logout-icon {
+    padding: 4px;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .borderNav ul {
+    gap: 0.3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .borderNav ul li {
+    width: 100%;
+    padding: 0.8rem 1;
+  }
+
+  .borderNav li a {
+    font-size: 16px;
+    padding: 0.4rem 0;
+  }
+
+  .auth-buttons {
+    padding: 0;
+    width: 60%;
+  }
+
+  .login,
+  .register {
+    width: 100%;
+    font-size: 15px;
+    padding: 0.5rem 0.8rem;
+    margin: 0.3rem 0;
+  }
+
+  .user-profile {
+    justify-content: center;
+    margin-top: 0.8rem;
+  }
+
+  .profile-detail {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .user-account {
+    top: 50px;
+    left: -100%;
+    transform: translateX(-50%);
+    z-index: 99;
+  }
+
+  .user-account-header p {
+    font-size: 16px;
+  }
+
+  .view-biodata {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  #logout-icon {
+    padding: 4px;
+  }
+}

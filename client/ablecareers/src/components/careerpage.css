@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container-job-preview {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.card-job-preview {
+  max-width: 90%;
+  max-height: 70%;
+  width: 100%;
+  height: auto;
+
+  border-radius: 15px;
+  padding: 4rem;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+.company-logo-preview {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.company-logo-preview h2 {
+  font-size: 3rem;
+}
+
+.company-logo-preview h3 {
+  font-size: 1.5rem;
+}
+
+.job-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.job-detail > p {
+  font-size: 20px;
+}
+
+.requirements-preview {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.requirements-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 20px;
+}
+
+#apply-job-btn {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 20px;
+  gap: 0.5em;
+  border-radius: 20px;
+  background-color: #0a66c2;
+  color: #fff;
+  border: none;
+  margin-top: 1em;
+}
+
+#applied-btn {
+  padding: 12px 20px;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  width: max-content;
+  background-color: grey;
+  margin-top: 1em;
+}
+
+.job-descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
+.job-descriptions p {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.subtopic {
+  margin: 16px 0px;
+  font-size: 24px;
+}
+
+.job-descriptions h5 {
+  font-size: 20px;
+}
+
+.job-descriptions ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: start;
+  gap: 12px;
+  padding-left: 20px;
+}
+
+.job-descriptions ul li {
+  list-style-type: square;
+  font-size: 18px;
+}
+
+.about-company {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-company p {
+  font-size: 20px;
+}
+
+.company-about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.company-about p {
+  font-weight: 200;
+}
+
+@media (max-width: 600px) {
+  .requirements-preview p {
+    font-size: 16px;
+  }
+
+  .job-detail p {
+    font-size: 16px;
+  }
+
+  .about-company {
+    text-align: center;
+    align-items: center;
+  }
+  .company-logo-preview {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .company-logo-preview img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .company-logo-preview h2 {
+    font-size: 40px;
+  }
+}

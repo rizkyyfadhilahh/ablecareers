@@ -1,0 +1,134 @@
+.collections-outer {
+  width: 100%;
+
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.collections-options {
+  padding: 3rem;
+  padding-bottom: 0;
+  padding-top: 5rem;
+  background-color: #2d2f31;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.collections-options ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.collections-options ul li {
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+.collections-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  padding: 0 3rem;
+}
+
+.course-collection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding: 2rem;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 12px;
+  background-color: #2d2f31;
+  color: white;
+  text-align: center;
+}
+
+.course-collection h1 {
+  font-size: 28px;
+}
+
+.course-collection img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.jobs-collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.jobs-collection {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: max-content;
+  gap: 1rem;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 2px 2px 5px black;
+  color: white;
+  background-color: #2d2f31;
+}
+
+.jobs-collection-container > p {
+  margin-top: 2rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.jobs-collection > h1 {
+  margin-top: 1rem;
+}
+
+.job-collection-header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.job-collection-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.job-collection-detail-card {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+@media (max-width: 600px) {
+  .collections-container,
+  .jobs-collections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .jobs-collection-container p {
+    padding: 1rem;
+  }
+  .job-collection-header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .job-collection-header h1 {
+    font-size: 24px;
+    width: 200px;
+  }
+
+  .job-collection-detail-card {
+    gap: 0;
+  }
+
+  .job-collection-detail {
+    gap: 0;
+  }
+
+  .jobs-collection {
+    width: 320px;
+  }
+}
